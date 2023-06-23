@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header .logo{
+    width: 100%;
+}
+.header .logo img{
+    max-width: 19%;
+    margin: 8px 0 8px 85px;
+}
+.navbar-nav a{
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(251, 248, 243);
+}
+.navbar-nav a:hover{
+    color: rgb(207, 198, 181);
+}
+.navbar-nav a.tour{
+    /* background-color: rgb(60, 60, 119); */
+    border-radius: 3px;
+    font-size: 10px;
+    background-image: linear-gradient(to right,rgb(60, 60, 119) , rgb(116, 94, 203));
+}
+}
+.navbar-nav a.paper{
+    color: red;
+}
+
+.description{
+    display: flex;
+    background-color: rgb(229, 239, 239);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.description > div{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 30px 30px 30px 0;
+    padding: 10px;
+    border-bottom: 2px solid rgb(24, 6, 54);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.text button{
+    background: transparent;
+    width: 40%;
+    margin:15px ;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid blueviolet;
+}
+.text button:hover{
+    background-color: rgb(60, 60, 119);
+    color: white;
+}
+.text{
+    margin: 0 10px 0 10px;
+}
+.description > div .photo img{
+    width: 300px;
+    border-radius: 5px;
+}
+#footer{
+    background-color: rgb(4, 4, 31);
+    height: 15vh;
+    padding: 15px 0 0 5px;
+}
+.footer-text p{
+    color: white;
+    font-size: 30px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .description > div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .description > div .photo img{
+        width: 200px;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    .text button{
+        width: 100%;
+    }
+}
