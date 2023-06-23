@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,14 +23,16 @@
     color: rgb(207, 198, 181);
 }
 .navbar-nav a.tour{
+    background-image: linear-gradient(to right,rgb(27, 27, 78) , rgb(134, 123, 181));
+    color: white;
     padding: 13px;
-    /* border-radius: 40px; */
     font-size: 10px;
     border: 1px solid rgb(9, 9, 53);
     text-align: center;
 }
 .navbar-nav a.tour:hover{
-    background-image: linear-gradient(to right,rgb(27, 27, 78) , rgb(134, 123, 181));
+    background: transparent;
+    color: white;
 }
 .navbar-nav a.paper{
     color: red;
@@ -47,7 +51,6 @@
   }
 .description{
     display: flex;
-    background-color: rgb(229, 239, 239);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -85,6 +88,12 @@
     background-color: rgb(60, 60, 119);
     color: white;
 }
+.text h2{
+    font-family: 'Cinzel', serif;
+}
+.text p{
+    font-family: 'Roboto', sans-serif;
+}
 .description > div .photo img{
     width: 400px;
     border-radius: 5px;
@@ -111,7 +120,7 @@
 
 @media screen and (max-width: 600px) {
     .navbar-nav a.tour{
-        width: 30%;
+        width: 50%;
     }
     .description > div{
         width: 100%;
@@ -134,9 +143,6 @@
     .header .logo img{
         margin: 5px;
         max-width: 40%;
-    }
-    .description .one .photo{
-        width: 100%;
     }
     .description > div{
         margin: 0;
